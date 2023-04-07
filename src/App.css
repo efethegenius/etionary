@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html,
+#root {
+  height: 100vh;
+}
+
+.App {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dash-container {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 770px;
+  /* overflow-y: scroll; */
+}
+
+ul li::marker {
+  color: #a445ed;
+}
+ul {
+  list-style-type: disc !important;
+}
+.dash-container header {
+  margin: 30px 0;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+  padding: 30px 10px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  border: none;
+  font-weight: 700;
+  color: #757575;
+  font-size: 1rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.keyword-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.phonetic {
+  color: #a445ed;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.meaning-container {
+  margin-bottom: 30px;
+}
+
+.meaning-container li {
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+.meaning-container h4 {
+  margin-bottom: 15px;
+}
+.meaning-container span {
+  margin-top: 8px;
+  color: #757575;
+}
+
+.meaning-container li p {
+  margin-bottom: 8px;
+}
+
+.part-of-speech {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.part-of-speech h4 {
+  font-style: italic;
+}
+
+.synonyms-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 10px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.synonyms-container h3 {
+  margin-bottom: 15px;
+}
+
+.synonyms-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.synonym {
+  border: 1px solid #a445ed;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 12px;
+  color: #a445ed;
+  cursor: pointer;
+}
+
+.source-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+svg g:hover {
+  fill: #6100ac;
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.part-of-speech-container {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 770px) {
+  .keyword-container h1 {
+    font-size: 3.5rem;
+  }
+}
